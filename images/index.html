@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>خياطة الأناقة — بوتيك نسائي</title>
+    <meta name="description" content="بوتيك خياطة وتفصيل للمرأة: جلابيب، قفاطين، فساتين سهرة. تفصيل حسب الطلب، توصيل والدفع عند الاستلام. تواصلي عبر واتساب للحجز." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <h1>خياطة الأناقة</h1>
+          <p class="tag">تفصيل وخياطة فاخرة للمرأة العصريّة</p>
+        </div>
+        <nav class="nav">
+          <a href="#services">خدماتي</a>
+          <a href="#gallery">المعرض</a>
+          <a href="#offers">عروض</a>
+          <a href="#contact">تواصل</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <h2>اكتشفي إطلالتكِ الفاخرة</h2>
+            <p>تفصيل يدوي، خامات فاخرة، واهتمام بالتفاصيل ليزداد سحر إطلالتكِ.</p>
+            <div class="hero-ctas">
+              <a class="btn primary" id="whatsapp-btn" href="#">اطلبي الآن عبر واتساب</a>
+              <a class="btn outline" href="#gallery">تصفحي المعرض</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="images/hero-placeholder.svg" alt="جلابية فاخرة" />
+          </div>
+        </div>
+      </section>
+
+      <section class="container map-section">
+        <h3 class="section-title">موقع المحل</h3>
+        <div class="map-wrap">
+          <iframe
+            src="https://www.google.com/maps/dir//33.8040302,-6.7947748/@33.8040116,-6.7948136,19.25z?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D&output=embed"
+            width="100%" height="360" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </section>
+
+      <section id="services" class="container services">
+        <h3 class="section-title">خدماتي</h3>
+        <div class="cards">
+          <div class="card">
+            <h4>تفصيل حسب الطلب</h4>
+            <p>موديلات مخصّصة حسب القياسات والمناسبات.</p>
+          </div>
+          <div class="card">
+            <h4>تعديلات وإصلاحات</h4>
+            <p>دقة في التعديل لضمان راحة وإطلالة مثالية.</p>
+          </div>
+          <div class="card">
+            <h4>أزياء أعراس وحفلات</h4>
+            <p>تصاميم فخمة تناسب يومكِ الخاص.</p>
+          </div>
+        </div>
+        <div class="category-quick">
+          <button class="cat-btn" data-cat="jalabiya">جلابية</button>
+          <button class="cat-btn" data-cat="qaftan">قفطان</button>
+          <button class="cat-btn" data-cat="dress">فستان</button>
+          <button class="cat-btn" data-cat="daily">إطلالة يومية</button>
+        </div>
+      </section>
+
+      <section id="gallery" class="container gallery">
+        <h3 class="section-title">المعرض</h3>
+        <div class="gallery-grid">
+          <figure>
+            <picture>
+              <source srcset="images/gal-1.jpg" type="image/jpeg">
+              <source srcset="images/gal-1.png" type="image/png">
+              <img class="gallery-img" src="images/gal-1.svg" alt="جلابية" />
+            </picture>
+            <figcaption>جلابية حرير مطرزة يدوياً</figcaption>
+          </figure>
+
+          <figure>
+            <picture>
+              <source srcset="images/gal-2.jpg" type="image/jpeg">
+              <source srcset="images/gal-2.png" type="image/png">
+              <img class="gallery-img" src="images/gal-2.svg" alt="قفطان" />
+            </picture>
+            <figcaption>قفطان عصري أنيق</figcaption>
+          </figure>
+
+          <figure>
+            <picture>
+              <source srcset="images/gal-3.jpg" type="image/jpeg">
+              <source srcset="images/gal-3.png" type="image/png">
+              <img class="gallery-img" src="images/gal-3.svg" alt="فستان" />
+            </picture>
+            <figcaption>فستان سهرة ناعم</figcaption>
+          </figure>
+
+          <figure>
+            <picture>
+              <source srcset="images/gal-4.jpg" type="image/jpeg">
+              <source srcset="images/gal-4.png" type="image/png">
+              <img class="gallery-img" src="images/gal-4.svg" alt="إطلالة يومية" />
+            </picture>
+            <figcaption>إطلالة يومية أنيقة</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Category Modals -->
+      <div id="cat-modal" class="cat-modal" aria-hidden="true">
+        <div class="cat-modal-inner">
+          <button class="cat-close" aria-label="اغلاق">×</button>
+          <h3 class="cat-title"></h3>
+          <p class="cat-desc"></p>
+          <div class="cat-items">
+            <!-- sample item template -->
+          </div>
+          <div class="cat-actions">
+            <a class="btn primary cat-whatsapp" href="#">اطلبي موديلات هذه الفئة عبر واتساب</a>
+          </div>
+        </div>
+      </div>
+
+      <section id="offers" class="container offers">
+        <h3 class="section-title">العروض الخاصة</h3>
+        <div class="offer-list">
+          <div class="offer">
+            <h4>خصومات العيد</h4>
+            <p>تخفيضات على مجموعة الجلابيب بمناسبة العيد.</p>
+          </div>
+          <div class="offer">
+            <h4>اشترِ 2 وخذي 1 مجاناً</h4>
+            <p>عرض لفترة محدودة على الملابس الجاهزة.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="payment" class="container payment">
+        <h3 class="section-title">الدفع والتوصيل</h3>
+        <div class="payment-grid">
+          <div class="payment-item">
+            <h4>طريقة الدفع</h4>
+            <p>الدفع عند الاستلام — خيار آمن ومريح للزبونات. نجهز الفاتورة ونسلّم عند التسليم.</p>
+          </div>
+          <div class="payment-item">
+            <h4>التوصيل</h4>
+            <p>نوفّر التوصيل للمنازل داخل المدن الكبرى. تكلفة التوصيل تعتمد على العنوان والمسافة.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="advice" class="container advice">
+        <h3 class="section-title">نصائح الموضة</h3>
+        <ul>
+          <li><strong>القاعده:</strong> اختاري القماش بحسب الموسم والراحة.</li>
+          <li><strong>للجسم المستدير:</strong> اختاري قصات عمودية لتطويل القامة بصرياً.</li>
+          <li><strong>للمناسبات:</strong> استثمري في التطريز والتفاصيل الذهبية.</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="container contact">
+        <h3 class="section-title">تواصل</h3>
+        <p>سعداء بخدمتكن — تواصلي مباشرة عبر الواتساب أو زوري محلاتنا.</p>
+        <div class="contact-row">
+          <a class="btn whatsapp-small" id="whatsapp-btn-2" href="#">مراسلة عبر واتساب</a>
+          <div class="contact-info">
+            <p>الهاتف: <a id="phone-link" href="tel:+212629568041">+212 629 568 041</a></p>
+            <p>الموقع: <a id="maps-link" href="https://www.google.com/maps/dir//33.8040302,-6.7947748/@33.8040116,-6.7948136,19.25z?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">33.8040302, -6.7947748</a></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lightbox modal -->
+      <div id="lightbox" class="lightbox" aria-hidden="true">
+        <button class="lightbox-close" aria-label="اغلاق">×</button>
+        <img class="lightbox-image" src="" alt="تكبير الصورة" />
+        <div class="lightbox-caption"></div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2025 خياطة الأناقة — جميع الحقوق محفوظة</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FZ-BRAND</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        .solution {
+            background-color: #e7f3ff;
+            padding: 15px;
+            border-left: 4px solid #0056b3;
+            margin: 20px 0;
+        }
+        code {
+            background-color: #eee;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FZ-BRAND Website</h1>
+        
+        <div class="solution">
+            <h2>GitHub Pages Not Displaying Correctly?</h2>
+            <p>If your GitHub Pages site isn't showing all your content, try these steps:</p>
+            <ol>
+                <li>Ensure your main page is named <code>index.html</code></li>
+                <li>Check that all file paths use lowercase letters (GitHub Pages is case-sensitive)</li>
+                <li>Wait 5-10 minutes after pushing changes for GitHub to rebuild your site</li>
+                <li>Clear your browser cache or try viewing in incognito mode</li>
+                <li>Verify your repository settings: Settings → Pages → Source branch is set correctly</li>
+            </ol>
+        </div>
+
+        <h2>Next Steps</h2>
+        <p>If you continue to experience issues, consider:</p>
+        <ul>
+            <li>Checking the GitHub Pages documentation</li>
+            <li>Looking at your repository's Actions tab for build errors</li>
+            <li>Using developer tools (F12) to check for 404 errors on resources</li>
+        </ul>
+    </div>
+</body>
+</html>

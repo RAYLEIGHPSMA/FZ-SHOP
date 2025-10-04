@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="100%" height="100%" fill="#f9f0f6"/>
+  <ellipse cx="200" cy="140" rx="100" ry="60" fill="#f5c7e0"/>
+  <text x="200" y="260" text-anchor="middle" font-family="Cairo, sans-serif" fill="#7a6b6b">فستان</text>
+</svg>

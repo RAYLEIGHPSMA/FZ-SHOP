@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="100%" height="100%" fill="#fff1f6"/>
+  <circle cx="200" cy="140" r="70" fill="#ffb6d0"/>
+  <text x="200" y="260" text-anchor="middle" font-family="Cairo, sans-serif" fill="#7a6b6b">جلابية</text>
+</svg>

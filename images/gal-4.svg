@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="100%" height="100%" fill="#fffaf6"/>
+  <path d="M50 200 C120 120, 280 120, 350 200 L350 240 L50 240 Z" fill="#ffe6f0"/>
+  <text x="200" y="260" text-anchor="middle" font-family="Cairo, sans-serif" fill="#7a6b6b">إطلالة يومية</text>
+</svg>
